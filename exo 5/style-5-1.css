@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+main > a {
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: #1abc9c;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.purple {
+    background-color: #9b59b6;
+}
+
+.orange {
+    background-color: #e67e22;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+a div {
+    text-align: center;
+    font-size: 2rem;
+}
+
