@@ -20,11 +20,8 @@ main {
 }
 
 main > div {
-    width: 25vw;
+    width: 23.5vw;
     margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .green {
@@ -45,6 +42,7 @@ main > div {
 
 .red {
     background-color: #e74c3c;
+    flex-basis: 100%;
 }
 
 div div {
