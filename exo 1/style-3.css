@@ -6,7 +6,6 @@
 
 html {
     font-size: 62.5%;
-    font-family: sans-serif;
 }
 
 body {
@@ -17,10 +16,12 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
-main div {
-    flex-grow: 1;
+main > div {
+    width: 25vw;
+    margin: 1rem;
 }
 
 .green {
@@ -52,4 +53,3 @@ div div {
     padding-top: 1.5rem;
     font-size: 3rem;
 }
-
