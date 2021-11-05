@@ -31,7 +31,6 @@ a {
 
 main {
     width: 100vw;
-
     display: flex;
     flex-wrap: wrap;
     font-size: 1.5rem;
@@ -51,6 +50,7 @@ main > div {
 
 .green {
     background-color: #1abc9c;
+    text-align: center;
 }
 
 .orange {
@@ -59,12 +59,12 @@ main > div {
 
 .blue {
     background-color: #3498db;
-    flex-basis: 15%;
+    width: 200px;
 }
 
 .purple {
     background-color: #9b59b6;
-    flex-basis: 80%;
+    flex-basis: 50%;
     flex-grow: 1;
 }
 
@@ -72,3 +72,23 @@ main > div {
     height: 70vh;
 }
 
+@media screen and (max-width: 600px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .green, .purple {
+        order: -1;
+    }
+
+    .purple {
+        flex-basis: unset;
+    }
+
+    .blue {
+        width: 100%;
+        height: unset;
+    }
+
+}
