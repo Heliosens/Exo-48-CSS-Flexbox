@@ -20,11 +20,12 @@ main {
 }
 
 main > div {
-    width: 23.5vw;
+    width: 20%;
     margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .green {
@@ -58,3 +59,17 @@ div div {
     font-size: 3rem;
 }
 
+@media screen and (max-width: 1024px) {
+
+    main > div {
+        width: 40%;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    main > div {
+        width: 80%;
+    }
+}

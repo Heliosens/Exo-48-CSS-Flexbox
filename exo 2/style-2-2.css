@@ -20,11 +20,12 @@ main {
 }
 
 main > div {
-    width: 23.5vw;
+    width: 20%;
     margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .green {
@@ -56,5 +57,12 @@ div div {
     text-align: center;
     padding-top: 1.5rem;
     font-size: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+    main > div {
+        width: 40%;
+    }
 }
 
